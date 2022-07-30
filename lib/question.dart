@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 class Question extends StatelessWidget {
   final String text;
-  final List<Widget> _texts = [];
   Question({Key? key, required this.text}) : super(key: key);
 
   @override
@@ -18,10 +17,6 @@ class Question extends StatelessWidget {
           text,
           textAlign: TextAlign.center,
           style: const TextStyle(fontSize: 40),
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: _texts,
         )
       ],
     ));
