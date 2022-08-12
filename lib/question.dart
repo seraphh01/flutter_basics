@@ -1,11 +1,9 @@
-import 'dart:html';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Question extends StatelessWidget {
   final String text;
-  Question({Key? key, required this.text}) : super(key: key);
+  const Question({Key? key, required this.text}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
